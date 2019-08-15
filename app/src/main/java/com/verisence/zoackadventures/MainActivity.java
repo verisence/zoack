@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         ButterKnife.bind(this);
-        ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, destinations);
+        DestinationsArrayAdapter adapter = new DestinationsArrayAdapter(this, android.R.layout.simple_list_item_1, destinations);
         mListView.setAdapter(adapter);
     }
 }
