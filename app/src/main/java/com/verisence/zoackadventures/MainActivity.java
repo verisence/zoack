@@ -32,9 +32,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         ButterKnife.bind(this);
-        DestinationsArrayAdapter adapter = new DestinationsArrayAdapter(this, android.R.layout.simple_list_item_1, destinations);
-        mListView.setAdapter(adapter);
-    }
+
 
     private void getDestinations() {
         final Service service = new Service();
