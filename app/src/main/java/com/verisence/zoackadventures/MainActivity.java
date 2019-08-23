@@ -12,6 +12,7 @@ import butterknife.ButterKnife;
 public class MainActivity extends AppCompatActivity {
     @BindView (R.id.destinationslistView) ListView mListView;
     private String[] destinations = new String[] {"Serengeti National Park", "Watamu Beach", "Diani Beach", "Kereita Forest", "Lake Bogoria Flamingos", "Longonot National Park", "Maasai Mara", "Meru National Park", "Mountain Climbing Safaris", "Mt.Kenya Hike","Nairobi National Park", "Ngorongoro Crater", "Sweet Waters Nanyuki", "Watamu"};
+    private String[] photos = new String[] {};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
