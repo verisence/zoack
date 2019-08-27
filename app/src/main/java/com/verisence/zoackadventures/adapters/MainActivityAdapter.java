@@ -1,4 +1,4 @@
-package com.verisence.zoackadventures;
+package com.verisence.zoackadventures.adapters;
 
 import android.content.Context;
 import android.content.Intent;
@@ -12,6 +12,9 @@ import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.squareup.picasso.Picasso;
+import com.verisence.zoackadventures.models.Destinations;
+import com.verisence.zoackadventures.R;
+import com.verisence.zoackadventures.ui.DestinationsDetailActivity;
 
 import org.parceler.Parcels;
 
@@ -56,7 +59,7 @@ public class MainActivityAdapter extends RecyclerView.Adapter<MainActivityAdapte
 
         private Context mContext;
 
-        public MainViewHolder(View itemView); {
+        public MainViewHolder(View itemView) {
 
             super(itemView);
             ButterKnife.bind(this, itemView);

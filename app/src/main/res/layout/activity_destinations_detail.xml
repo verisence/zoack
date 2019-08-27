@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DestinationsDetailActivity">
+    tools:context=".ui.DestinationsDetailActivity">
 
-    <android.support.v4.view.ViewPager
+    <androidx.core.view.ViewPager
         android:id="@+id/viewPager"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -19,6 +19,6 @@
             android:paddingBottom="4dp"
             android:paddingTop="4dp" />
 
-    </android.support.v4.view.ViewPager>
+    </androidx.core.view.ViewPager>
 
 </RelativeLayout>

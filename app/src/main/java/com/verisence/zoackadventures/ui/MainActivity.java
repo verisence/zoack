@@ -1,12 +1,16 @@
-package com.verisence.zoackadventures;
+package com.verisence.zoackadventures.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
-import android.util.Log;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
+
+import com.verisence.zoackadventures.models.Destinations;
+import com.verisence.zoackadventures.adapters.MainActivityAdapter;
+import com.verisence.zoackadventures.R;
+import com.verisence.zoackadventures.Services.Service;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -30,18 +34,23 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         ButterKnife.bind(this);
-
+        getDestinations();
+    }
 
     private void getDestinations() {
         final Service service = new Service();
-        Service.findDestinations(new Callback() {
+        service.findDestinations(new Callback() {
+
+            @Override
+            public void onFailure(Call call, IOException e) {
+                e.printStackTrace();
+            }
 
             @Override
             public void onResponse(Call call, Response response) throws IOException {
 
-                mDestinations = Service.processResults(response);
+                mDestinations =  service.processResults(response);
                 MainActivity.this.runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
@@ -56,4 +65,4 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 }
-}
+

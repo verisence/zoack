@@ -1,4 +1,7 @@
-package com.verisence.zoackadventures;
+package com.verisence.zoackadventures.Services;
+
+import com.verisence.zoackadventures.Constants;
+import com.verisence.zoackadventures.models.Destinations;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -43,9 +46,9 @@ public class Service {
                     String description = destinationJSON.getString("description");
                     String photo = destinationJSON.getString("photo");
                     String location = destinationJSON.getString("location");
-                    String itinerary = destinationJSON.getString("itinerary");
+                    String itenary = destinationJSON.getJSONObject("Itenary").getString("description");
 
-                    Destinations destination = new Destinations(name, description, photo, location, itinerary);
+                    Destinations destination = new Destinations(name, description, photo, location, itenary);
                     destinations.add(destination);
                 }
             }

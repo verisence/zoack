@@ -1,8 +1,10 @@
-package com.verisence.zoackadventures;
+package com.verisence.zoackadventures.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.verisence.zoackadventures.R;
 
 public class SplashActivity extends AppCompatActivity {
 

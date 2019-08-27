@@ -1,4 +1,4 @@
-package com.verisence.zoackadventures;
+package com.verisence.zoackadventures.models;
 
 
 
@@ -6,22 +6,22 @@ import org.parceler.Parcel;
 
 @Parcel
 public class Destinations {
-    private String name;
-    private String description;
-    private String photo;
-    private String location;
-    private String itinerary;
+     String name;
+     String description;
+     String photo;
+     String location;
+     String itenary;
 
 
     public Destinations() {}
 
     public Destinations(String name, String description, String photo,
-                  String location, String itinerary) {
+                  String location, String itenary) {
         this.name = name;
         this.description = description;
         this.photo = photo;
         this.location = location;
-        this.itinerary = itinerary;
+        this.itenary = itenary;
     }
 
     public String getName() {
@@ -40,8 +40,8 @@ public class Destinations {
         return location;
     }
 
-    public String getItinerary() {
-        return itinerary;
+    public String getItenary() {
+        return itenary;
     }
 
 }
