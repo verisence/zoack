@@ -34,12 +34,12 @@ public class DestinationsDetailFragment extends Fragment implements View.OnClick
     @BindView(R.id.itenaryTextView) TextView mItenaryLabel;
 
 
-    private Destinations mDestinations;
+    private Destinations mDestination;
 
-    public static DestinationsDetailFragment newInstance(Destinations mDestinations) {
+    public static DestinationsDetailFragment newInstance(Destinations mDestination) {
         DestinationsDetailFragment mDestinationsDetailFragment = new DestinationsDetailFragment();
         Bundle args = new Bundle();
-        args.putParcelable("destinations", Parcels.wrap(mDestinations));
+        args.putParcelable("destination", Parcels.wrap(mDestination));
         mDestinationsDetailFragment.setArguments(args);
         return mDestinationsDetailFragment;
     }
@@ -47,7 +47,7 @@ public class DestinationsDetailFragment extends Fragment implements View.OnClick
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mDestinations = Parcels.unwrap(getArguments().getParcelable("destination"));
+        mDestination = Parcels.unwrap(getArguments().getParcelable("destination"));
     }
 
     @Override
@@ -55,12 +55,13 @@ public class DestinationsDetailFragment extends Fragment implements View.OnClick
         View view = inflater.inflate(R.layout.fragment_destinations_detail, container, false);
         ButterKnife.bind(this, view);
 
-        Picasso.get().load(mDestinations.getPhoto()).into(mPhotoImageView);
-
-        mNameLabel.setText(mDestinations.getName());
-        mDescriptionLabel.setText(mDestinations.getDescription());
-        mLocationLabel.setText(mDestinations.getLocation());
-        mItenaryLabel.setText(mDestinations.getItenary());
+        if (mDestination.getPhoto()!= null) {
+            Picasso.get().load(mDestination.getPhoto()).into(mPhotoImageView);
+        }
+        mNameLabel.setText(mDestination.getName());
+        mDescriptionLabel.setText(mDestination.getDescription());
+        mLocationLabel.setText(mDestination.getLocation());
+        mItenaryLabel.setText(mDestination.getItenary());
 
 
 //        mSavedDestinationsButton.setOnClickListener(this);

@@ -54,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
                 MainActivity.this.runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
+
                         mAdapter = new MainActivityAdapter(getApplicationContext(), mDestinations);
                         mRecyclerView.setAdapter(mAdapter);
 
