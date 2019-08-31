@@ -11,6 +11,8 @@ import android.widget.ImageView;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
+import com.verisence.zoackadventures.R;
+
 public class SplashActivity extends AppCompatActivity {
 
     @BindView(R.id.splashImage)
