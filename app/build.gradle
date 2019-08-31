@@ -54,7 +54,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
     testImplementation 'org.robolectric:robolectric:3.8'
     //Espresso dependencies
-    androidTestImplementation 'androidx.test:rules:1.1.0'
+    androidTestImplementation 'com.android.support.test:rules:1.0.2'
     //butterknife
     implementation 'com.jakewharton:butterknife:10.0.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.0.0'
@@ -64,7 +64,7 @@ dependencies {
     // OkHttp dependency
     implementation 'com.squareup.okhttp3:okhttp:3.10.0'
 //    implementation files('libs/java-json.jar')
-
+    implementation 'com.android.support:recyclerview-v7:+'
     implementation 'com.squareup.picasso:picasso:2.71828'
 }
 

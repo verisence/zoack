@@ -12,14 +12,21 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".ui.DestinationsDetailActivity"></activity>
-        <activity android:name=".ui.SplashActivity" />
         <activity android:name=".ui.MainActivity">
+        <activity android:name=".ProfileActivity"/>
+        <activity android:name=".SignUpActivity"
+            android:theme="@style/NoAction"/>
+        <activity android:name=".LoginActivity"
+            android:theme="@style/NoAction"/>
+        <activity android:name=".SplashActivity"
+            android:theme="@style/NoAction">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainActivity"/>
     </application>
 
 </manifest>
