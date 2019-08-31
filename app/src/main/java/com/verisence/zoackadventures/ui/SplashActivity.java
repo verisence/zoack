@@ -1,4 +1,4 @@
-package com.verisence.zoackadventures;
+package com.verisence.zoackadventures.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
