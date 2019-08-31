@@ -54,8 +54,7 @@ public class MainActivityAdapter extends RecyclerView.Adapter<MainActivityAdapte
         ImageView mPhotoImageView;
         @BindView(R.id.nameTextView)
         TextView mNameTextView;
-        @BindView(R.id.destinationButton)
-        Button mDestinationButton;
+
 
         private Context mContext;
 

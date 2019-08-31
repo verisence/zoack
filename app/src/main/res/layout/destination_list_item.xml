@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"       android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     android:layout_marginBottom="15dp">
 
@@ -16,18 +17,19 @@
         android:id="@+id/nameTextView"
         android:textSize="22sp"
         android:textStyle="bold"
-        android:text="NAME"/>
+        android:text="NAME"
+        android:layout_gravity="center"/>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/destinationButton"
-            android:background="@color/orangePrimary"
+        <!--<Button-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/destinationButton"-->
+            <!--android:background="@color/orangePrimary"-->
 
-            android:layout_alignParentRight="true"  />
-    </RelativeLayout>
+            <!--android:layout_alignParentRight="true"  />-->
+    <!--</RelativeLayout>-->
 </LinearLayout>
