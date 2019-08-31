@@ -2,13 +2,12 @@
 <resources>
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorAccent">#e45520</color>
     <color name="orangePrimary">#FF5722</color>
     <color name="orangePrimaryDark">#E64A19</color>
     <color name="orangeSecondary">#e45520</color>
     <color name="greenSecondary">#6aa03c</color>
 
-    <color name="colorAccent">#0066FF</color>
     <color name="orangeC">#e45520</color>
     <color name="purpleC">#0066FF</color>
     <color name="link">#0066FF</color>
